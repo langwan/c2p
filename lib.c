@@ -28,7 +28,6 @@ PyObject* wrap_tuple(PyObject* self) {
 	int n = 0;
 	char* msg = NULL;
 	msg = (char *)malloc(sizeof(char) * 255);
-	msg[10] = '\0';
 	tuple(&n, msg);
 	PyObject* tuple = PyTuple_New(2);
 	PyObject *pn, *pm;
